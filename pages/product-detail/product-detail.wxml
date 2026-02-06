@@ -1,0 +1,19 @@
+<view class="container">
+  <view class="card">
+    <view class="title">{{product.name}}</view>
+    <view class="subtitle">{{product.description}}</view>
+  </view>
+
+  <view class="card">
+    <view class="title">价格与佣金</view>
+    <view class="subtitle">售价：¥{{product.price}}</view>
+    <view class="subtitle">分销佣金：¥{{product.commission}}</view>
+    <view class="badge">{{shareTips}}</view>
+  </view>
+
+  <view class="card">
+    <view class="title">分销推广码</view>
+    <view class="subtitle">{{inviteCode}}</view>
+    <view class="button-primary" bindtap="handleCopyCode">复制推广码</view>
+  </view>
+</view>

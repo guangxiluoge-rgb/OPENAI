@@ -1,0 +1,18 @@
+<view class="container">
+  <view class="card">
+    <view class="title">购物车</view>
+    <view class="subtitle">确认订单后自动归属上级分销</view>
+  </view>
+
+  <view wx:for="{{items}}" wx:key="id" class="card">
+    <view class="title">{{item.name}}</view>
+    <view class="subtitle">单价：¥{{item.price}}</view>
+    <view class="subtitle">数量：{{item.quantity}}</view>
+  </view>
+
+  <view class="card">
+    <view class="title">合计</view>
+    <view class="subtitle">总金额：¥{{total}}</view>
+    <view class="button-primary">去结算</view>
+  </view>
+</view>

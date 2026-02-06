@@ -1,0 +1,7 @@
+.badge {
+  margin-top: 16rpx;
+}
+
+.button-primary {
+  margin-top: 20rpx;
+}
