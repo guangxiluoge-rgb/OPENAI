@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/products/products",
+    "pages/product-detail/product-detail",
+    "pages/cart/cart",
+    "pages/distribution/distribution"
+  ],
+  "window": {
+    "navigationBarTitleText": "多级分销商城",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#1AAD19",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/products/products",
+        "text": "商品"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/distribution/distribution",
+        "text": "分销"
+      }
+    ]
+  }
+}

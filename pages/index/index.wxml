@@ -1,0 +1,22 @@
+<view class="container">
+  <view class="card">
+    <view class="title">多级分销商城</view>
+    <view class="subtitle">一站式商品采购 + 分销裂变</view>
+  </view>
+
+  <view class="card">
+    <view class="title">活动精选</view>
+    <view wx:for="{{banners}}" wx:key="id" class="card">
+      <view class="title">{{item.title}}</view>
+      <view class="subtitle">{{item.subtitle}}</view>
+    </view>
+  </view>
+
+  <view class="card">
+    <view class="title">运营概览</view>
+    <view wx:for="{{highlights}}" wx:key="label" class="card">
+      <view class="subtitle">{{item.label}}</view>
+      <view class="title">{{item.value}}</view>
+    </view>
+  </view>
+</view>

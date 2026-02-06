@@ -1,0 +1,15 @@
+<view class="container">
+  <view class="card">
+    <view class="title">精选商品</view>
+    <view class="subtitle">点击查看详情并生成分销链接</view>
+  </view>
+
+  <view wx:for="{{products}}" wx:key="id" class="card product" data-id="{{item.id}}" bindtap="handleOpenDetail">
+    <view class="title">{{item.name}}</view>
+    <view class="row">
+      <view class="subtitle">售价：¥{{item.price}}</view>
+      <view class="badge">佣金 ¥{{item.commission}}</view>
+    </view>
+    <view class="subtitle">库存：{{item.stock}}</view>
+  </view>
+</view>

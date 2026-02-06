@@ -1,0 +1,24 @@
+<view class="container">
+  <view class="card">
+    <view class="title">分销中心</view>
+    <view class="subtitle">等级：{{summary.level}}</view>
+    <view class="subtitle">团队规模：{{summary.teamSize}} 人</view>
+    <view class="subtitle">本月佣金：¥{{summary.monthCommission}}</view>
+  </view>
+
+  <view class="card">
+    <view class="title">佣金规则</view>
+    <view wx:for="{{rules}}" wx:key="*this" class="subtitle">
+      {{item}}
+    </view>
+  </view>
+
+  <view class="card">
+    <view class="title">团队成员</view>
+    <view wx:for="{{team}}" wx:key="name" class="card">
+      <view class="title">{{item.name}}</view>
+      <view class="subtitle">{{item.level}}</view>
+      <view class="subtitle">本月销售：¥{{item.sales}}</view>
+    </view>
+  </view>
+</view>
